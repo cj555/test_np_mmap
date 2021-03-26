@@ -1,7 +1,7 @@
 import numpy as np
 import time 
 filename = 'test_np.dat'
-fp = np.memmap(filename, dtype='float32', mode='w+', shape=(3,4))
+# fp = np.memmap(filename, dtype='float32', mode='w+', shape=(3,4))
 fp = np.memmap(filename, dtype='<U100', mode='w+', shape=(3,4)) # 传输字符串,U:字符串，100 字符串的最大长度
 print(fp)
 
